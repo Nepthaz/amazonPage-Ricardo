@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#amazon {
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#amazon:hover {
+  height: 33px;
+  width: 100px;
+}
+
+#pin {
+  height: 18px;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.usaflag {
+  height: 25px;
+}
+
+label img {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#quit-x-img {
+  height: 50px;
+  position: absolute;
+  top: -77px;
+  right: -420px;
+  display: none;
+  z-index: 5;
+}
+
+nav {
+  height: 65px;
+  background-color: #131A22;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#division1, #division2, #division3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+#Venezuela {
+  margin-top: 7px;
+}
+
+#search-bar {
+  height: 39.5px;
+  margin-right: -30px;
+  margin-left: -30px;
+  border-right: 0;
+  border-left: 0;
+  width: 600px;
+}
+
+#btn-searchbar-left {
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 0px 0px 5px;
+  border-right: hidden;
+  background-color: rgb(235, 234, 234);
+}
+
+#btn-searchbar-right {
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 5px 5px 0px;
+  border-left: hidden;
+  background-color: #FEBD69;
+}
+
+.divs-flex {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#arrow1, #arrow2 {
+  margin-top: 20px;
+}
+
+#flexible {
+  display: flex;
+  align-items: center;
+}
+
+.division-linea {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.division-linea:hover {
+  border: solid white;
+  cursor: pointer;
+}
+
+#cart-text {
+  padding-top: 20px;
+}
+
+#subnav {
+  height: 40px;
+  background-color: #232F3E;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+#subnav .sectionAmazon {
+  display: flex;
+  padding: 5px 5px;
+}
+#subnav .sectionAmazon:hover {
+  border: solid white;
+  cursor: pointer;
+}
+#subnav .sectionAmazon p {
+  font-weight: bold;
+  cursor: pointer;
+}
+#subnav .sectionAmazon #Menu {
+  display: none;
+}
+#subnav .sectionAmazon #Menu:checked ~ aside {
+  display: flex;
+}
+#subnav .sectionAmazon #Menu:checked ~ label {
+  position: absolute;
+  z-index: 5;
+}
+#subnav .sectionAmazon #Menu:checked ~ label #icon-bars {
+  display: none;
+}
+#subnav .sectionAmazon #Menu:checked ~ label p {
+  display: none;
+}
+#subnav .sectionAmazon #Menu:checked ~ label #quit-x-img {
+  display: block;
+}
+#subnav .sectionAmazon label {
+  display: flex;
+}
+
+ul {
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 0.9rem;
+}
+ul .subnavdiv {
+  padding: 8px 5px;
+}
+ul .subnavdiv:hover {
+  border: solid white;
+  cursor: pointer;
+}
+
+aside {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: 365px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  z-index: 5;
+}
+aside #Identificacion {
+  background-color: #232F3E;
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+aside #Identificacion h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+aside #Identificacion h2 img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+aside section h3 {
+  margin-top: 15px;
+  margin-left: 18px;
+}
+aside section ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+aside section ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 8px 0px;
+  margin-right: 15px;
+}
+aside section ul li:hover {
+  background-color: rgba(0, 0, 0, 0.345);
+}
+aside #asection2 h3 {
+  margin-top: 15px;
+  margin-left: 18px;
+}
+aside #asection2 ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+aside #asection2 ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px 0px;
+  margin-footer: 40px;
+  margin-right: 15px;
+}
+aside #asection2 ul li:hover {
+  background-color: rgba(0, 0, 0, 0.345);
+}
+
+main {
+  height: 2300px;
+  background-color: #E3E6E6;
+  background-image: linear-gradient(to top, #E3E6E6, transparent), url("../img/background.jpg");
+  background-size: 100% 50%, 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 100px, 0px 0px;
+  z-index: 1;
+  position: relative;
+}
+main section {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  gap: 20px;
+}
+main section h2 {
+  font-weight: bold;
+  margin: 10px 15px;
+}
+main section .cart {
+  width: 330px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: auto;
+  background-color: white;
+}
+main section .cart .contenido1 {
+  display: flex;
+  flex-wrap: auto;
+  gap: 30px;
+  margin: 20px;
+}
+main section .cart .contenido1 img {
+  width: 120px;
+  height: 100px;
+}
+main section .cart .contenido2 {
+  display: flex;
+  justify-content: center;
+}
+main section .cart .contenido2 img {
+  width: 300px;
+  height: 290px;
+}
+main section .img4 {
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #08778B;
+}
+main section .img1 {
+  font-weight: lighter;
+  margin-top: 23.5px;
+  margin-left: 20px;
+  color: #08778B;
+}
+
+.linea-div {
+  border: 1px solid rgba(128, 128, 128, 0.146);
+}
+
+.espacio {
+  height: 30px;
+  background-color: white;
+}
+
+#beforefooter {
+  display: flex;
+  height: 110px;
+  justify-content: space-between;
+  align-items: center;
+}
+#beforefooter h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+#beforefooter h5 {
+  color: #08778B;
+  margin-right: 10px;
+  align-items: center;
+  font-size: 0.7rem;
+  display: flex;
+  font-family: sans-serif;
+  height: 10%;
+}
+#Btn-Inicio {
+  color: white;
+  background-color: #37475A;
+  border: 0;
+  width: 100%;
+  padding: 20px;
+  font-size: 0.85rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#Btn-Inicio:hover {
+  cursor: pointer;
+}
+
+.hr-foot {
+  border: 1px solid rgba(35, 47, 62, 0.9294117647);
+}
+
+footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  color: white;
+  background-color: #232F3E;
+  font-family: sans-serif;
+  height: 370px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  list-style: none;
+}
+footer ul li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer-select {
+  background-color: #232F3E;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-select img {
+  height: 25px;
+  margin-right: 60px;
+}
+#footer-select select {
+  border: 1px solid white;
+  background: #232F3E;
+  padding: 10px;
+  text-align: center;
+  color: White;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+#footer-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #131A22;
+  color: white;
+  font-family: sans-serif;
+}
+#footer-list #div-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+#footer-list #div-list ul {
+  display: flex;
+  flex-direction: column;
+}
+#footer-list #div-list ul .miniTitulos {
+  color: white;
+  margin: -15px 0px;
+  font-size: 0.85rem;
+}
+#footer-list #div-list ul .miniTitulos:hover {
+  cursor: pointer;
+}
+#footer-list #div-list ul .texto-abajo {
+  padding-bottom: 10px;
+  color: #999999;
+  font-weight: lighter;
+}
+#footer-list #div-list ul .texto-abajo:hover {
+  cursor: pointer;
+}
+
+#foot-final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131A22;
+  padding: 30px;
+  color: white;
+  gap: 10px;
+  font-family: sans-serif;
+}
+#foot-final a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  font-size: 0.75rem;
+}
+#foot-final p {
+  font-size: 0.75rem;
+}
+
+/*# sourceMappingURL=style.css.map */

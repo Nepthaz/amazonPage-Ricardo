@@ -1,0 +1,65 @@
+nav
+    height: 65px
+    background-color: #131A22
+    display: flex
+    justify-content: space-around
+    align-items: center
+@mixin display-division()
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 30px
+    color: white
+    font-weight: bold
+    font-family: sans-serif
+    font-size: 0.8rem
+#division1, #division2,#division3
+   @include display-division()
+#Venezuela
+    margin-top: 7px
+#search-bar
+    height: 39.5px
+    margin-right: -30px 
+    margin-left: -30px
+    border-right: 0
+    border-left: 0
+    width: 600px
+@mixin btns-searchbar()
+    height: 40px
+    padding-right: 10px
+    padding-left: 10px 
+    display: flex
+    align-items: center
+#btn-searchbar-left
+    @include btns-searchbar()
+    border-radius: 5px 0px 0px 5px
+    border-right: hidden
+    background-color: rgb(235, 234, 234)
+#btn-searchbar-right
+    @include btns-searchbar()
+    border-radius: 0px 5px 5px 0px
+    border-left: hidden
+    background-color: #FEBD69
+.divs-flex
+    display: flex
+    align-items: center 
+    gap: 3px
+#arrow1, #arrow2
+    margin-top: 20px
+#flexible
+    display: flex
+    align-items: center
+.division-linea
+    height: 100%
+    display: flex
+    align-items: center
+    &:hover
+        border: solid white
+        cursor: pointer
+#cart-text
+    padding-top: 20px
+    
+
+
+    
+    
